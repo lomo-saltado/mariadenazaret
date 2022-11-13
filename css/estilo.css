@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -162,7 +164,7 @@ nav{
     padding: 0 50px;
   }
  .logo:hover{
-    content: url(../imagenes/logohover.png);
+    content: url(../imagenes/logohover.webp);
     cursor: pointer;
  }
   .navbar .logo a{
@@ -197,6 +199,7 @@ nav{
   .links li:hover .htmlcss-arrow,
   .links li:hover .js-arrow{
     transform: rotate(180deg);
+    transition: .5s ease all;
     }
   
   nav .navbar .links li .arrow{
@@ -591,11 +594,12 @@ header{
     transition: var(--transition);
 }
 .primaria{
-    background: url(../imagenes/niña.jpeg);
+    background: url(../imagenes/imgeprimaria.webp);
     background-size: cover;
+
 }
 .secundaria{
-    background: url(../imagenes/bgsecundaria.jpeg);
+    background: url(../imagenes/imagesecundaria.webp);
     background-size: cover;
 }
 .category:hover{
@@ -882,6 +886,7 @@ iframe{
     .links li:hover .htmlcss-arrow,
     .links li:hover .js-arrow{
         transform: rotate(0deg);
+        transition: var(--transition);
     }
     .navbar .links li .sub-menu .more-sub-menu{
         display: none;
@@ -908,6 +913,7 @@ iframe{
     .navbar .nav-links.show1 .links .htmlcss-arrow,
     .navbar .nav-links.show3 .links .js-arrow{
         transform: rotate(180deg);
+        transition: var(--transition);
     }
     .navbar .nav-links.show2 .links .more-arrow{
         transform: rotate(90deg);
