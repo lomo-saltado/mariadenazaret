@@ -16,10 +16,10 @@ faqs.forEach(faq => {
 
         //cambiar icono
         const icon = faq.querySelector('.faq_icon i');
-        if(icon.className === 'uil uil-plus') {
-            icon.className = "uil uil-minus";
+        if(icon.className === 'fa-solid fa-plus') {
+            icon.className = "fa-solid fa-minus";
         } else {
-            icon.className = "uil uil-plus";
+            icon.className = "fa-solid fa-plus";
         }
     })
 })
@@ -66,4 +66,92 @@ faqs.forEach(faq => {
   jsArrow.onclick = function() {
    navLinks.classList.toggle("show3");
   }
+  //whts
+
+
+  popupWhatsApp = () => {
   
+    let btnClosePopup = document.querySelector('.closePopup');
+    let btnOpenPopup = document.querySelector('.whatsapp-button');
+    let popup = document.querySelector('.popup-whatsapp');
+    let sendBtn = document.getElementById('send-btn');
+  
+    btnClosePopup.addEventListener("click",  () => {
+      popup.classList.toggle('is-active-whatsapp-popup')
+    })
+    
+    btnOpenPopup.addEventListener("click",  () => {
+      popup.classList.toggle('is-active-whatsapp-popup')
+       popup.style.animation = "fadeIn .6s 0.0s both";
+    })
+    
+    sendBtn.addEventListener("click", () => {
+    let msg = document.getElementById('whats-in').value;
+    let relmsg = msg.replace(/ /g,"%20");
+       
+     window.open('https://wa.me/51948544543?text='+relmsg, '_blank'); 
+    
+    });
+  
+    setTimeout(() => {
+      popup.classList.toggle('is-inactive-whatsapp-popup');
+    }, 3000);
+  }
+  
+  popupWhatsApp();
+
+  
+
+//corazon dia-noche
+  const heart = document.querySelector(".heart");
+
+  heart.addEventListener("click", () =>{
+  if(!heart.classList.contains("forward")){
+      heart.classList.add("forward");
+      heart.classList.remove("reverse")
+  }else{
+      heart.classList.add("reverse")
+      heart.classList.remove("forward");
+
+      }
+  })
+
+
+  const body = document.querySelector("body"),
+    toggle = document.querySelector(".toggle");
+
+  let getMode = localStorage.getItem("mode");
+  if (getMode && getMode === "dark") {
+    body.classList.add("dark");
+    toggle.classList.add("active");
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (!body.classList.contains("dark")) {
+      return localStorage.setItem("mode", "light");
+    }
+    localStorage.setItem("mode", "dark");
+  });
+
+  toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
+//testimonios swipeer
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  //------------
+  breakpoints: {
+      970:{
+          slidesPerView: 3,
+      },
+      600:{
+          slidesPerView: 2,
+      }
+  }
+});
