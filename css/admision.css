@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.admission{
+    padding: 5rem;
+    background: var(--color-bg1);
+    color: var(--color-white);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.admission p{
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: 'Amiri', serif;
+}
+
+
+.categories_admison{
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2rem;
+}
+.category{
+    background: var(--color-);
+    
+}
+
+.category p{
+    text-align: justify;
+    
+}
+h5{
+   
+    font-size: 1.4rem;
+}
+
+
+
+
+/* -----------Profesores----- */
+.team{
+    background: var(--color-b1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+
+}
+.team_container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+.team_member{
+    color: var(--color-light);
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.9rem;
+}
+.team_member:hover{
+    border-color: var(--color-primary);
+}
+.team_member-image img{
+    filter: grayscale(80%);
+}
+.team_member:hover img{
+    filter: none;
+}
+.team_member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_member-info h4{
+    font-weight: 400;
+}
+.team_member-info p{
+    color: var(--color-light);
+    font-size: 0.9rem;
+}
+.team_member-socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+    
+}
+.team_member:hover
+.team_member-socials{
+    right: 0;
+}
+.team_member-socials a{
+    padding: 1rem;
+}
+
+/* -------------------responsive ------------*/
+@media screen and (max-width: 1024px){
+    .team_container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .team_member{
+        padding: 1rem;
+    }
+    .categories_admison{
+        grid-template-columns: 2fr;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .admission{
+        padding: 2.4rem;
+    }
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team_member{
+        padding: 0;
+    }
+    .team_member p{
+        margin-bottom: 1.5rem;
+    }
+    .categories_admison{
+        padding: 5px;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+    }
+    
+    .category p{
+        text-align: justify;
+        padding: 0;
+    }
+    h5{
+        padding: 0;
+        
+    }
+
+
+
+}
