@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!--description links-->
     <meta name="description" content="Galeria" />
@@ -22,10 +21,6 @@
     <!--end d.-->
 
     <link rel="shorcut icon" href="../favicon.png">
-
-
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   
 
@@ -103,7 +98,7 @@
     <section class="main swiper mySwiper" style="margin-top: 5rem;">
       <div class="wrapper swiper-wrapper" style="height: 70vh;">
         <div class="slide swiper-slide">
-          <img src="images/IMG_4276.jpg" alt="" class="image" />
+          <img src="images/IMG_4276.webp" alt="" class="image" />
           <div class="image-data">
             <!-- <span class="text">mdn</span> -->
             <h2 style="float: left; padding: 100px;" data-aos="fade-right" data-aos-duration="3000">
@@ -115,7 +110,7 @@
           </div>
         </div>
         <div class="slide swiper-slide">
-          <img src="images/img.jpg" alt="" class="image" />
+          <img src="images/img.webp" alt="" class="image" />
           <div class="image-data">
             <!-- <span class="text">We really like what we do.</span> -->
             <h2>
@@ -126,7 +121,7 @@
           </div>
         </div>
         <div class="slide swiper-slide">
-          <img src="images/img.jpg" alt="" class="image" />
+          <img src="images/img.webp" alt="" class="image" />
           <div class="image-data">
             <!-- <span class="text">Making Our coffee with lover.</span> -->
             <h2>
@@ -158,22 +153,22 @@
       </ul>
 <!-------------- imagen------------------------------ -->
       <div class="product">
-        <div class="itemBox" data-item="festividades"><a href="./images/festi.jpg" data-lightbox="models" data-title="feria de ciencia"><img src="./images/festi.jpg" alt=""></a></div>
+        <div class="itemBox" data-item="festividades"><a href="./images/festi.webp" data-lightbox="models" data-title="feria de ciencia"><img src="./images/festi.jpg" alt=""></a></div>
 
 
 
-        <div class="itemBox" data-item="primaria"><a href="./images/primaria.jpg" data-lightbox="models"><img src="./images/primaria.jpg" alt=""></a></div>
+        <div class="itemBox" data-item="primaria"><a href="./images/primaria.webp" data-lightbox="models"><img src="./images/primaria.jpg" alt=""></a></div>
 
 
-        <div class="itemBox" data-item="secundaria"><a href="./images/secundaria.jpg" data-lightbox="models"><img src="./images/secundaria.jpg" alt=""></a></div>
-
-
-
-        <div class="itemBox" data-item="promociones"><a href="./images/img.jpg" data-lightbox="models"><img src="./images/img.jpg" alt=""></a></div>
+        <div class="itemBox" data-item="secundaria"><a href="./images/secundaria.webp" data-lightbox="models"><img src="./images/secundaria.jpg" alt=""></a></div>
 
 
 
-        <div class="itemBox" data-item="premios"><a href="./images/img2.jpg" data-lightbox="models"><img src="./images/img2.jpg" alt=""></a></div>
+        <div class="itemBox" data-item="promociones"><a href="./images/img.webp" data-lightbox="models"><img src="./images/img.jpg" alt=""></a></div>
+
+
+
+        <div class="itemBox" data-item="premios"><a href="./images/img2.webp" data-lightbox="models"><img src="./images/img2.jpg" alt=""></a></div>
 
       </div>
 <!------------ end------------------------------------ -->
@@ -266,46 +261,6 @@
 
   
 </body>
-<!-- dark/light -->
-<script>
-  const heart = document.querySelector(".heart");
-
-  heart.addEventListener("click", () => {
-      if (!heart.classList.contains("forward")) {
-          heart.classList.add("forward");
-          heart.classList.remove("reverse")
-      } else {
-          heart.classList.add("reverse")
-          heart.classList.remove("forward");
-
-      }
-  })
-
-
-</script>
-
-
-<script>
-  const body = document.querySelector("body"),
-      toggle = document.querySelector(".toggle");
-
-  let getMode = localStorage.getItem("mode");
-  if (getMode && getMode === "dark") {
-      body.classList.add("dark");
-      toggle.classList.add("active");
-  }
-
-  toggle.addEventListener("click", () => {
-      body.classList.toggle("dark");
-
-      if (!body.classList.contains("dark")) {
-          return localStorage.setItem("mode", "light");
-      }
-      localStorage.setItem("mode", "dark");
-  });
-
-  toggle.addEventListener("click", () => toggle.classList.toggle("active"));
-</script>
 
 <!-- end -->
 
@@ -368,9 +323,5 @@
   </script>
 
 <script src="./JS/lightbox-plus-jquery.js"></script>
-<!-------illumination---------->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+
 </html>
