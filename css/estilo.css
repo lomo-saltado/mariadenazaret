@@ -165,7 +165,7 @@ nav{
     padding: 0 50px;
   }
  .logo:hover{
-    content: url(../imagenes/logohover.png);
+    content: url(../imagenes/logohover.webp);
     cursor: pointer;
  }
   .navbar .logo a{
@@ -594,11 +594,11 @@ header{
     transition: var(--transition);
 }
 .primaria{
-    background: url(../imagenes/niña.jpeg);
+    background: url(../imagenes/imgeprimaria.webp);
     background-size: cover;
 }
 .secundaria{
-    background: url(../imagenes/bgsecundaria.jpeg);
+    background: url(../imagenes/imagesecundaria.webp);
     background-size: cover;
 }
 .category:hover{
