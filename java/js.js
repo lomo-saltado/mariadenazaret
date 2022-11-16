@@ -137,6 +137,7 @@ faqs.forEach(faq => {
 
   toggle.addEventListener("click", () => toggle.classList.toggle("active"));
 
+
 //testimonios swipeer
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,

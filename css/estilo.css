@@ -41,7 +41,7 @@ body{
 /*-----------------------------------------*/
 body.dark {
     background-color: var(--colot-light);
-    color: var(--color-dark);
+    color: var(--color-light);
   }
   .toggle {
     position: relative;

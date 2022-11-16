@@ -64,7 +64,7 @@ ol li:hover{
 }
 
 .category:nth-child(1){
-    background: url(../imagenes/containerderecha.jpeg);
+    background: url(../imagenes/containerderecha.webp);
     background-size: 50%;
     object-fit: cover;
     background-position: right;
@@ -73,7 +73,7 @@ ol li:hover{
     
 }
 .category:nth-child(2){
-    background: url(../imagenes/containerderecha.jpeg);
+    background: url(../imagenes/containerderecha.webp);
     background-size: 50%;
     object-fit: cover;
     background-position: right;
@@ -82,7 +82,7 @@ ol li:hover{
 
 }
 .category:nth-child(3){
-    background: url(../imagenes/containerderecha.jpeg);
+    background: url(../imagenes/containerderecha.webp);
     background-size: 50%;
     object-fit: cover;
     background-position: right;
