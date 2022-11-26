@@ -164,8 +164,11 @@
 
 /*------------------------*/
 @media (max-width: 991px){
+    .titulo_contacto h2{
+        font-size: 1.3rem;
+    }
     .contactus{
-        padding: 20px;
+        padding: 4px;
     }
     .box{
         grid-template-columns: 1fr;
