@@ -413,6 +413,7 @@ header{
     background: url(../imagenes/maria.webp);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
