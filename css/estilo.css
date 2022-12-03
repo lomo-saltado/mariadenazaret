@@ -408,10 +408,10 @@ header{
     position: relative;
     top: 4.7rem;
     overflow: hidden;
-    height: 70vh;
+    height: 90vh;
     margin-bottom: 5rem;
     background: url(../imagenes/maria.webp);
-    background-position: center;
+    background-position-y: -20rem;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -991,6 +991,7 @@ iframe{
 /*----------------RESPONSIVE --------------------*/
 
 @media screen and (max-width: 600px) {
+
     .subimg{
         width: 50%;
     }
@@ -1006,12 +1007,15 @@ iframe{
     nav .navbar .nav-links{
         max-width: 100%;
     } 
+    nav{
+        height: 5rem;
+    }
 
     /*============*/
 
     header{
         height: 100%;
-        background-image: none;
+        background: var(--color-dark);
     }
     .header_container{
         grid-template-columns: 1fr;
