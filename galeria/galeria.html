@@ -400,5 +400,46 @@
    navLinks.classList.toggle("show3");
   }
 </script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.addEventListener("contextmenu",(e) => {
+    e.preventDefault()
+  })
+  document.addEventListener("keydown",(e) => {
+    e.preventDefault();
+    if (e.keyCode ==123){
+      return false;
+    }
+  })
+
+  document.addEventListener("keyup" , (e) => {
+    if(e.key = "PrintScreen"){
+      navigator.clipboard.writeText('hola');
+      myAlert("erro","capturas desabilitadas", "la proxima vez sera reportado",);
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if(e.ctrlKey && e.key =="p"){
+      myAlert("eror", "esta seccion");
+      e.cancelBubble = true;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    } else if (e.metaKey && e.shiftKey){
+      Swal.fire({
+        imageUrl: 'https://placeholder.pics/svg/100x100',
+        imageHeight: "100%",
+        imageWidth: "100%",
+        imageAlt: 'A tall image',
+        title: "recortes",
+        Text: "solicitamos",
+        backdrop: true,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        width: "90%"
+      });
+    }
+  });
+</script>
 
 </html>
