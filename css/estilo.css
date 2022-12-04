@@ -846,7 +846,7 @@ iframe{
         top: 0;
         left: -100%;
         display: block;
-        max-width: 270px;
+        max-width: 50%;
         width: 100%;
         background:  var(--color-dark);
         line-height: 40px;
