@@ -138,6 +138,9 @@ h5 {
 
 
 @media screen and (max-width: 600px) {
+    header{
+        max-height: 100vh;
+    }
     .admission {
         padding: 2.4rem;
     }
