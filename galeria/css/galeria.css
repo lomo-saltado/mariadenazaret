@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Maritime Tropical Neue';
 }
 
 
@@ -38,6 +39,7 @@ section ul li.active{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .product .itemBox{
     position: relative;
@@ -57,6 +59,7 @@ section ul li.active{
     height: 100%;
     object-fit: cover;
     border: 4px solid #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 .product .itemBox img:hover{
     filter: brightness(80%);
@@ -279,12 +282,27 @@ body.lb-disable-scrolling {
 
 @media screen and (max-width: 1024px){
     .body_center{
-        width: 95%;
+        width: 100%;
     }
+    
 }
 @media screen and (max-width: 600px){
     .body_center{
-        width: 97%;
+        width: 100%;
+    }
+    /* .product .itemBox{
+      width: 200px;
+      height: 200px;
+      margin: -1.5rem;
+    } */
+    .image-data h3{
+      margin-bottom: 20rem;
+      font-size: 1.8rem;
+      color: var(--color-dark);
+      text-align: center;
+    }
+    .image-data br{
+      display: none;
     }
 }
 

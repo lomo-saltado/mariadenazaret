@@ -30,7 +30,6 @@
   width: 100%;
   object-fit: cover;
 }
-
 .slide .image-data {
   position: absolute;
   top: 50%;
@@ -98,8 +97,10 @@ a.button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  
   .nav-btn {
-    visibility: hidden;
+    visibility: visible;
+    zoom: 0.3;
   }
   .swiper-pagination-bullet {
     visibility: visible;
