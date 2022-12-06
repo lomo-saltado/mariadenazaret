@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap'); */
 
+header{
+    max-height: 70vh;
+    background: none;
+}
 .admission {
     padding: 5rem;
     background: var(--color-bg1);
@@ -11,7 +15,7 @@
     margin-bottom: 2rem;
     text-align: justify;
     font-size: 1.2em;
-    font-family: 'Amiri', serif;
+    /*font-family: 'Amiri', serif;*/
 }
 
 
